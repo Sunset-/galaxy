@@ -1,0 +1,18 @@
+host: 192.168.100.100
+port: 8200
+model: MDDS-E1
+name: 测试盒子
+sn: "VMware-56 4d d3 2e bf ee"
+snCmd: "dmidecode -t 1 | grep 'Serial Number'"
+center:
+#  host: 106.12.218.245
+  host: 192.168.1.120
+  managePort: 18080
+  heartInterval: 30
+  url-heart: /management/box/heart
+  url-resource: /management/task/resource
+log:
+  level: debug
+redis:
+  addr: 192.168.1.169:16379
+mediaAddress: "mediatransfer:7555"
